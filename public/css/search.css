@@ -1,0 +1,25 @@
+.search-result {
+    padding: 4rem 0;
+
+}
+
+.search-heading{
+    font-weight: 400;
+    color: #383838;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.search-heading span{
+    font-weight: 700;
+    
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.container {
+    width: 100%;
+}

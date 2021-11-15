@@ -1,0 +1,122 @@
+.navbar {
+    background-color: #f4f4f4;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .2);
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.img-logo {
+    height: 60px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-box {
+    width: 500px;
+    display: flex;
+}
+
+.search-input {
+    width: 80%;
+    padding: .8rem;
+    border: 1px solid lightgray;
+    border-radius: 10px 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.search-btn {
+    width: 20%;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    padding: .8rem;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.categories-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #dfdfdf;
+}
+
+.categories-items a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: lightgray;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+.categories-items a:hover {
+    color: gray;
+}
+
+.user-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.login-logout-popup {
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60px;
+    transition: .5s;
+}
+
+.login-logout-popup::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    border-radius: 4px;
+}
+
+.account-info{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.user-btn {
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    width: 100%;
+    background-color: #383838;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.user-btn:hover{
+    opacity: .7;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}

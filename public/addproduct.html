@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/addproduct.css">
+    <title>Clothing / Add Product</title>
+</head>
+<body>
+
+    <!-- loader -->
+    <img src="../img/loader.gif" alt="loader" class="loader">
+
+    <!-- alert box -->
+    <div class="msg-box ">
+        <img src="../img/error.png" alt="error image" class="err-img">
+        <p class="err-msg">some content here</p>
+    </div>
+
+    <img src="../img/dark-logo.png" alt="log img" class="logo-img">
+
+    <div class="container">
+        <div class="product-form">
+            <input type="text" id="product-name" placeholder="Product Name">
+            <input type="text" id="short-desc" placeholder="Short Description">
+            <textarea  id="product-desc" placeholder="Product Description"></textarea>
+            <div class="product-info">
+                <div class="product-img">
+                    <p class="text">product image</p>
+                </div>
+                <div class="upload-images">
+                    <p class="text"><img src="../img/camera.png" alt="Camera image">upload image</p>
+                    <div class="images-input">
+                        <input type="file" id="file-upload-first" class="file-upload" hidden>
+                        <label for="file-upload-first" class="upload-img"></label>
+                        <input type="file" id="file-upload-second" class="file-upload" hidden>
+                        <label for="file-upload-second" class="upload-img"></label>
+                        <input type="file" id="file-upload-third" class="file-upload" hidden>
+                        <label for="file-upload-third" class="upload-img"></label>
+                        <input type="file" id="file-upload-fourth" class="file-upload" hidden>
+                        <label for="file-upload-fourth" class="upload-img"></label>
+                    </div>
+                </div>
+                <div class="select-sizes">
+                    <p class="text">select sizes</p>
+                    <div class="sizes">
+                        <input type="checkbox" class="size-checkbox" id="xs" value="xs">
+                        <input type="checkbox" class="size-checkbox" id="s" value="s">
+                        <input type="checkbox" class="size-checkbox" id="m" value="m">
+                        <input type="checkbox" class="size-checkbox" id="l" value="l">
+                        <input type="checkbox" class="size-checkbox" id="xl" value="xl">
+                        <input type="checkbox" class="size-checkbox" id="xxl" value="xxl">
+                        <input type="checkbox" class="size-checkbox" id="xxxl" value="xxxl">
+                    </div>
+                </div>
+                <div class="product-price">
+                    <input type="number" class="actual-price" placeholder="Actual Price">
+                    <input type="number" class="discount" placeholder="Discount">
+                    <input type="number" class="sell-price" placeholder="Selling Price">
+                </div>
+            </div>
+            <input type="number" id="stock" class="stock" placeholder="Items in stocks (minimum 20 items)">
+            <textarea name="tags" id="tags" class="tags" placeholder="Enter tags here, for example #men, #women, #jeans etc..."></textarea>
+            <input type="checkbox" class="checkbox" id="terms"  checked>
+            <label for="terms">Clothing take 30% from your sell</label>
+            <div class="buttons">
+                <button class="btn" id="add-btn">add product</button>
+                <button class="btn" id="save-btn">save draft</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    <script src="../js/token.js"></script>
+    <script src="../js/addproduct.js"></script>
+</body>
+</html>

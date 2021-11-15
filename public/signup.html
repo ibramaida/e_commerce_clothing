@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>Clothing - Create Account</title>
+</head>
+<body>
+
+    <!-- loader -->
+    <img src="./img/loader.gif" alt="loader" class="loader">
+
+    <!-- alert box -->
+    <div class="msg-box ">
+        <img src="./img/error.png" alt="error image" class="err-img">
+        <p class="err-msg">some content here</p>
+    </div>
+
+
+    <!-- form -->
+    <div class="container">
+        <img src="./img/dark-logo.png" alt="logo image" class="logo">
+        <div>
+            <input type="text" id="name" class="input-field" placeholder="Name" autocomplete="off">
+            <input type="email" id="email" class="input-field" placeholder="Email" autocomplete="off">
+            <input type="password" id="password" class="input-field" placeholder="Password" autocomplete="off">
+            <input type="text" id="phone" class="input-field" placeholder="Telephone" autocomplete="off">
+            <input type="checkbox"  id="terms" class="checkbox" checked>
+            <label for="terms" class="check-label">Agree to our <a href="#" class="terms-link">terms and conditions</a></label><br>
+            <input type="checkbox"  id="receive-offers" class="checkbox">
+            <label for="eceive-offers" class="check-label">recive upcoming offers and events email</label><br>
+            <button class="submit-btn" >Create Account</button>
+        </div>
+        <p class="have-account">already have an account?
+            <a href="/login" class="account-link">login</a>
+        </p>
+    </div>
+    
+    <script src="./js/token.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+</html>

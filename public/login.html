@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>Clothing - Login</title>
+</head>
+<body>
+     <!-- loader -->
+     <img src="./img/loader.gif" alt="loader" class="loader">
+
+     <!-- alert box -->
+     <div class="msg-box ">
+         <img src="./img/error.png" alt="error image" class="err-img">
+         <p class="err-msg">some content here</p>
+     </div>
+ 
+ 
+     <!-- form -->
+     <div class="container">
+         <img src="./img/dark-logo.png" alt="logo image" class="logo">
+         <div>
+             
+             <input type="email" id="email" class="input-field" placeholder="Email" autocomplete="off">
+             <input type="password" id="password" class="input-field" placeholder="Password" autocomplete="off">
+             
+             <button class="submit-btn" >Login</button>
+         </div>
+         <p class="have-account">Don't have an account?
+             <a href="/signup" class="account-link">Create One</a>
+         </p>
+     </div>
+     
+     <script src="./js/token.js"></script>
+     <script src="./js/form.js"></script>
+    
+</body>
+</html>
