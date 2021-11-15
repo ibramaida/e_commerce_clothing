@@ -3,20 +3,20 @@ const createNavbar = () => {
     navbar.innerHTML = `
         <div class="container">
             <div class="nav-flex">
-                <a href="index.html" class="logo"><img src="../img/dark-logo.png" alt="logo image" class="img-logo"></a>
+                <a href="index.html" class="logo"><img src="./img/dark-logo.png" alt="logo image" class="img-logo"></a>
                 <div class="nav-items">
                     <div class="search-box">
                         <input type="text" placeholder="search your article ..." class="search-input">
                         <button class="search-btn">Search</button>
                     </div>
                     <a  class="user-profile" id="user-img-btn">
-                        <img src="../img/user.png" alt="user profile" >
+                        <img src="./img/user.png" alt="user profile" >
                         <div class="login-logout-popup hide">
                             <p class="account-info">Log in as, name</p>
                             <button class="user-btn" id="user-btn">Log out</button>
                         </div>
                     </a>
-                    <a href="/cart"><img src="../img/cart.png" alt="cart image"></a>
+                    <a href="/cart"><img src="./img/cart.png" alt="cart image"></a>
                 </div>
             </div>
             </div>
